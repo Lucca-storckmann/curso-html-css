@@ -6,20 +6,19 @@
 }
 
 body {
-    height: 100vh;
     box-sizing: border-box;
     background-color: black;
     color: white;
 }
 button {
-    background-color: green;
+    background-color: black;
     color: white;
 }
 .titulo {
     color: aqua;
 }
 .apresentacao {
-    margin: 10% 20%;
+    padding: 7% 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,32 +34,49 @@ button {
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
 }
-.apresentacao__links {
-    display: flex;
-    justify-content: space-between;
-}
-.apresentacao__link__instagram {
-    background-color: aqua;
-    color: black;
-    border-radius: 16px;
+
+.apresentacao__link__sub {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
     font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-    width: 280px;
-    padding: 21.5px;
-    text-decoration: none;
-   font-family: "Montserrat", sans-serif;
-}
-.apresentacao__link__github {
-    background-color: aqua;
-    color: black;
-    border-radius: 16px;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-    width: 280px;
-    padding: 21.5px;
-    text-decoration: none;
-   font-family: "Montserrat", sans-serif;
 }
 
+.apresentacao__links {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px; /* Adiciona um espaço de 32px entre os elementos */
+    margin: 5%;
+}
+.apresentacao__link__instagram, .apresentacao__link__github {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid rgb(124, 212, 253);
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    width: 378px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao__link__instagram:hover, .apresentacao__link__github:hover {
+    background-color: #272727
+}
+
+.apresentacao__footer {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 24px;
+    background-color: rgb(124, 212, 253);
+    font-family: "Krona One", sans-serif;
+    font-size: 15px;
+}
