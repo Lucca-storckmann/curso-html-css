@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-BR>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTE ALURA</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Primeiro teste</h1>
-    <p>Primeiro teste do curso de HTML e CSS do curso da Alura</p>
-    <h1>Primeiras Impressões
-        <h2>Alura HTML e CSS
-            <p>As primeiras impresões da plataforma são muito boas</p>
-            <img src="logo-html.png" alt="Logo do HTML">
-        </h2>
-        <h2>Pontos Positivos</h2>
-        <ol>Plataforma de ensino interativa</ol>
-        <ol>Conteúdo atualizado e relevante</ol>
-        <ol>Comunidade ativa para suporte</ol>
-        <h2>Pontos Negativos</h2>
-        <ul>Ainda não tive</ul>
     </h1>
-    <header></header>
-    <main>
-        <h1>Eleve seu negócio digital a outro nível com um <strong>Front-end de qualidade!</strong></h1>
-        <p>Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
-        <a href="https://www.instagram.com/aluraonline/">Instagram</a>
-        <a href="https://github.com/settings/profile">GitHub</a>
-        <img src="Captura de tela 2026-02-09 202801.png" alt="Foto de Joana Santos">
-
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link">Home</a>
+                <a class="cabecalho__menu__link">Sobre mim</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+            <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__titulo">Eleve seu negócio digital a outro nível com um <strong class="titulo">Front-end de qualidade!</strong></h1>
+            <p class="apresentacao__texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__link__sub">Acesse minhas redes:</h2>                  
+                <a href="https://www.instagram.com/escoladelutasvillanova?igshid=MzRlODBiNWFlZA%3D%3D" class="apresentacao__link__instagram"> <img src="imagens/instagram.png" alt="Ícone do Instagram">Instagram</a>
+                <a href="https://github.com/joana-santos" class="apresentacao__link__github"> <img src="imagens/github.png" alt="Ícone do GitHub"> GitHub</a>
+            </div>
+            </section>
+        <img src="imagens/Captura de tela 2026-02-09 202801.png" alt="Foto de Joana Santos">
     </main>
-    <footer></footer>
+    <footer class="apresentacao__footer">
+        <h2>Desenvolvido por Lucca Storckmann Medeiros</h2>
+    </footer>   
 </body>
 </html>
